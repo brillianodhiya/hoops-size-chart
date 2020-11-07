@@ -1,0 +1,3240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+/* Set tinggi body ke 100% */
+body, html, p{
+  height: 100%;
+  margin: 0;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+/* Style tab links nya */
+.tablink {
+  background-color: transparent;
+  color: #484848;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 33.3%;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+.tablink:hover {
+  border-bottom: solid 1px coral;
+}
+
+/* Style untuk tab konten (dan tambah height:100% untuk full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 70px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+/*subtab nya*/
+
+* {box-sizing: border-box}
+.tabbed {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.tabbed > input {
+  display: none;
+}
+.tabbed > input:checked + label {
+  color: coral;
+}
+.tabbed > input + label:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.tabbed > input:checked + label + div {
+  display: block;
+}
+.tabbed > label {
+  order: 1;
+  flex-grow: 1;
+  padding: 4px 10px;
+  text-align: center;
+}
+.tabbed > div {
+  order: 2;
+  flex-basis: 100%;
+  display: none;
+  padding: 0px;
+}
+
+.tab-col{
+  background-color: lightgrey;
+}
+.tab-col-sub{
+  background-color: whitesmoke;
+}
+.contain{
+  background: white;
+  color: #3e3e3e;
+  height: 600px;
+}
+
+/* untuk tampilan aja */
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #3e3e3e;
+}
+
+.tabbed {
+
+}
+
+hr {
+  background-color: white;
+  height: 5px;
+  border: 0;
+  margin: 10px 0 0;
+}
+hr + * {
+  margin-top: 10px;
+}
+hr + hr {
+  margin: 0 0;
+}
+.main-menu-container{
+  max-width: 16%;
+  margin: auto;
+}
+.top-heading{
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;  
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+.submenu_container{
+  width: 70%;
+  height: auto;
+  overflow: scroll;
+}
+.subtab{
+
+}
+.head-desc{
+  color: coral;
+  font-size: 26px;
+
+}
+.head-desc-1{
+  color: grey;
+  font-size: 18px;
+}
+.head-contain{
+  text-align: center;
+  padding-top: 20px;
+}
+table{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px; 
+  table-layout: fixed;
+}
+.td-even{
+  background-color: lightgrey;
+}
+.tab-con{
+  margin:10px;
+}
+.td-odd{
+  background-color: whitesmoke;
+}
+th{
+  background-color:#3e3e3e;
+  color: white; 
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 100;
+  width: 25%;
+}
+td{
+  text-align: center;
+}
+tr:hover td{
+  border: solid 1px coral;
+}
+tr td:hover{
+  background-color: coral;
+  color: white;
+}
+</style></head>
+<body>
+<div class="top-heading">size chart</div>
+<div class="main-menu-container">
+	<button class="tablink" onclick="openPage('NIKE', this, 'coral')" id="defaultOpen">NIKE</button>
+	<button class="tablink" onclick="openPage('ADIDAS', this, 'coral')" >ADIDAS</button>
+	<button class="tablink" onclick="openPage('PUMA', this, 'coral')">PUMA</button>
+</div>
+<div class="submenu-container">
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+/* Set tinggi body ke 100% */
+body, html, p{
+  height: 100%;
+  margin: 0;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+/* Style tab links nya */
+.tablink {
+  background-color: transparent;
+  color: #484848;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 33.3%;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+.tablink:hover {
+  border-bottom: solid 1px coral;
+}
+
+/* Style untuk tab konten (dan tambah height:100% untuk full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 70px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+/*subtab nya*/
+
+* {box-sizing: border-box}
+.tabbed {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.tabbed > input {
+  display: none;
+}
+.tabbed > input:checked + label {
+  color: coral;
+}
+.tabbed > input + label:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.tabbed > input:checked + label + div {
+  display: block;
+}
+.tabbed > label {
+  order: 1;
+  flex-grow: 1;
+  padding: 4px 10px;
+  text-align: center;
+}
+.tabbed > div {
+  order: 2;
+  flex-basis: 100%;
+  display: none;
+  padding: 0px;
+}
+
+.tab-col{
+  background-color: lightgrey;
+}
+.tab-col-sub{
+  background-color: whitesmoke;
+}
+.contain{
+  background: white;
+  color: #3e3e3e;
+  height: 600px;
+}
+
+/* untuk tampilan aja */
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #3e3e3e;
+}
+
+.tabbed {
+
+}
+
+hr {
+  background-color: white;
+  height: 5px;
+  border: 0;
+  margin: 10px 0 0;
+}
+hr + * {
+  margin-top: 10px;
+}
+hr + hr {
+  margin: 0 0;
+}
+.main-menu-container{
+  max-width: 16%;
+  margin: auto;
+}
+.top-heading{
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;  
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+.submenu_container{
+  width: 70%;
+  height: auto;
+  overflow: scroll;
+}
+.subtab{
+
+}
+.head-desc{
+  color: coral;
+  font-size: 26px;
+
+}
+.head-desc-1{
+  color: grey;
+  font-size: 18px;
+}
+.head-contain{
+  text-align: center;
+  padding-top: 20px;
+}
+table{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px; 
+  table-layout: fixed;
+}
+.td-even{
+  background-color: lightgrey;
+}
+.tab-con{
+  margin:10px;
+}
+.td-odd{
+  background-color: whitesmoke;
+}
+th{
+  background-color:#3e3e3e;
+  color: white; 
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 100;
+  width: 25%;
+}
+td{
+  text-align: center;
+}
+tr:hover td{
+  border: solid 1px coral;
+}
+tr td:hover{
+  background-color: coral;
+  color: white;
+}
+</style>	
+</head>
+<body>
+	<div id="NIKE" class="tabcontent">
+	  <div class="container">
+	      <div class="tabbed">
+	          <input type="radio" id="tabbed-tab-1-1" name="tabbed-tab-1" checked><label for="tabbed-tab-1-1">MEN</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-1-1-1" name="tabbed-tab-1-1" checked><label for="tabbed-tab-1-1-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">MEN SHOES</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+	                	</div>
+	                	<div>
+	                		<table border="0px">
+	                			<th>US Size</th>
+	                			<th>UK Size</th>
+	                			<th>EU Size</th>
+	                			<th>CM</th>
+	                				                			<tr>
+	                				<td class="td-even">6</td>
+	                				<td class="td-odd">5,5</td>
+	                				<td class="td-even">38.5</td>
+	                				<td class="td-odd">24</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">6,5</td>
+	                				<td class="td-odd">6</td>
+	                				<td class="td-even">39</td>
+	                				<td class="td-odd">24.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">7</td>
+	                				<td class="td-odd">6</td>
+	                				<td class="td-even">40</td>
+	                				<td class="td-odd">25</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">7.5</td>
+	                				<td class="td-odd">6.5</td>
+	                				<td class="td-even">40.5</td>
+	                				<td class="td-odd">25.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">8</td>
+	                				<td class="td-odd">7</td>
+	                				<td class="td-even">41</td>
+	                				<td class="td-odd">26</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">8.5</td>
+	                				<td class="td-odd">7.5</td>
+	                				<td class="td-even">42</td>
+	                				<td class="td-odd">26.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">9</td>
+	                				<td class="td-odd">8</td>
+	                				<td class="td-even">42.5</td>
+	                				<td class="td-odd">27</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">9.5</td>
+	                				<td class="td-odd">8.5</td>
+	                				<td class="td-even">43</td>
+	                				<td class="td-odd">27.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">10</td>
+	                				<td class="td-odd">9</td>
+	                				<td class="td-even">44</td>
+	                				<td class="td-odd">28</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">10.5</td>
+	                				<td class="td-odd">9.5</td>
+	                				<td class="td-even">44.5</td>
+	                				<td class="td-odd">28.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">11</td>
+	                				<td class="td-odd">10</td>
+	                				<td class="td-even">45</td>
+	                				<td class="td-odd">29</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">11.5</td>
+	                				<td class="td-odd">10.5</td>
+	                				<td class="td-even">45.5</td>
+	                				<td class="td-odd">29.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">12</td>
+	                				<td class="td-odd">11</td>
+	                				<td class="td-even">46</td>
+	                				<td class="td-odd">30</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">12.5</td>
+	                				<td class="td-odd">11.5</td>
+	                				<td class="td-even">47</td>
+	                				<td class="td-odd">30.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">13</td>
+	                				<td class="td-odd">12</td>
+	                				<td class="td-even">47.5</td>
+	                				<td class="td-odd">31</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">13.5</td>
+	                				<td class="td-odd">12.5</td>
+	                				<td class="td-even">48</td>
+	                				<td class="td-odd">31.5</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">14</td>
+	                				<td class="td-odd">13</td>
+	                				<td class="td-even">48.5</td>
+	                				<td class="td-odd">32</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">15</td>
+	                				<td class="td-odd">14</td>
+	                				<td class="td-even">49.5</td>
+	                				<td class="td-odd">33</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">16</td>
+	                				<td class="td-odd">15</td>
+	                				<td class="td-even">50.5</td>
+	                				<td class="td-odd">34</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">17</td>
+	                				<td class="td-odd">16</td>
+	                				<td class="td-even">51.5</td>
+	                				<td class="td-odd">35</td>
+	                			</tr>
+	                				                			<tr>
+	                				<td class="td-even">18</td>
+	                				<td class="td-odd">17</td>
+	                				<td class="td-even">52.5</td>
+	                				<td class="td-odd">36</td>
+	                			</tr>
+	                				                		</table>
+	                	</div>
+	            	</div>
+	                <input type="radio" id="tabbed-tab-1-1-2" name="tabbed-tab-1-1"><label for="tabbed-tab-1-1-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">MEN TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+			                	<div>
+		                		<table border="0px">
+		                			<th>Size</th>
+		                			<th>Chest</th>
+		                			<th>Waist</th>
+		                			<th>Hips</th>
+		                					                			<tr>
+		                				<td class="td-even">S</td>
+		                				<td class="td-odd">88-96</td>
+		                				<td class="td-even">73-81</td>
+		                				<td class="td-odd">88-96</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">M</td>
+		                				<td class="td-odd">96-104</td>
+		                				<td class="td-even">81-89</td>
+		                				<td class="td-odd">96-104</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">L</td>
+		                				<td class="td-odd">104-112</td>
+		                				<td class="td-even">89-97</td>
+		                				<td class="td-odd">104-112</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">XL</td>
+		                				<td class="td-odd">112-124</td>
+		                				<td class="td-even">97-109</td>
+		                				<td class="td-odd">112-120</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">XXL</td>
+		                				<td class="td-odd">124-136</td>
+		                				<td class="td-even">109-121</td>
+		                				<td class="td-odd">120-128</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">3XL</td>
+		                				<td class="td-odd">136-148</td>
+		                				<td class="td-even">121-133</td>
+		                				<td class="td-odd">128-136</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">4XL</td>
+		                				<td class="td-odd">147-160</td>
+		                				<td class="td-even">133-145</td>
+		                				<td class="td-odd">136-148</td>
+		                			</tr>
+		                					                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-1-1-3" name="tabbed-tab-1-1"><label for="tabbed-tab-1-1-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-1-1-3-1" name="tabbed-tab-1-1-1" checked><label for="tabbed-tab-1-1-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">MEN BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                			<tr>
+				                				<td class="td-even">XS</td>
+				                				<td class="td-odd"><73</td>
+				                				<td class="td-even"><88</td>
+				                				<td class="td-odd"></td>
+				                				<td class="td-even"></td>
+				                			</tr>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-1-1-3-2" name="tabbed-tab-1-1-1"><label for="tabbed-tab-1-1-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">MEN PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                			<tr>
+				                				<td class="td-even">s</td>
+				                				<td class="td-odd">79-84</td>
+				                				<td class="td-even">94-99</td>
+				                				<td class="td-odd"></td>
+				                				<td class="td-even"></td>
+				                				<td class="td-odd"></td>
+				                			</tr>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->
+	                </div>
+	              </div>
+	          </div>
+
+	          <input type="radio" id="tabbed-tab-1-2" name="tabbed-tab-1"><label for="tabbed-tab-1-2">WOMEN</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-1-2-1" name="tabbed-tab-1-2" checked><label for="tabbed-tab-1-2-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">WOMEN SHOES</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+		                		<table border="0px">
+		                			<th>US Size</th>
+		                			<th>UK Size</th>
+		                			<th>EU Size</th>
+		                			<th>CM</th>
+		                					                			<tr>
+		                				<td class="td-even">5</td>
+		                				<td class="td-odd">2.5</td>
+		                				<td class="td-even">35.5</td>
+		                				<td class="td-odd">22</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">5.5</td>
+		                				<td class="td-odd">3</td>
+		                				<td class="td-even">36</td>
+		                				<td class="td-odd">22.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">6</td>
+		                				<td class="td-odd">3.5</td>
+		                				<td class="td-even">36.5</td>
+		                				<td class="td-odd">23</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">6.5</td>
+		                				<td class="td-odd">4</td>
+		                				<td class="td-even">37.5</td>
+		                				<td class="td-odd">23.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">7</td>
+		                				<td class="td-odd">4.5</td>
+		                				<td class="td-even">38</td>
+		                				<td class="td-odd">24</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">7.5</td>
+		                				<td class="td-odd">5</td>
+		                				<td class="td-even">38.5</td>
+		                				<td class="td-odd">24.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">8</td>
+		                				<td class="td-odd">5.5</td>
+		                				<td class="td-even">39</td>
+		                				<td class="td-odd">25</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">8.5</td>
+		                				<td class="td-odd">6</td>
+		                				<td class="td-even">40</td>
+		                				<td class="td-odd">25.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">9</td>
+		                				<td class="td-odd">6.5</td>
+		                				<td class="td-even">40.5</td>
+		                				<td class="td-odd">26</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">9.5</td>
+		                				<td class="td-odd">7</td>
+		                				<td class="td-even">41</td>
+		                				<td class="td-odd">26.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">10</td>
+		                				<td class="td-odd">7.5</td>
+		                				<td class="td-even">42</td>
+		                				<td class="td-odd">27</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">10.5</td>
+		                				<td class="td-odd">8</td>
+		                				<td class="td-even">42.5</td>
+		                				<td class="td-odd">27.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">11</td>
+		                				<td class="td-odd">8.5</td>
+		                				<td class="td-even">43</td>
+		                				<td class="td-odd">28</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">11.5</td>
+		                				<td class="td-odd">9</td>
+		                				<td class="td-even">44</td>
+		                				<td class="td-odd">28.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">12</td>
+		                				<td class="td-odd">9.5</td>
+		                				<td class="td-even">44.5</td>
+		                				<td class="td-odd">29</td>
+		                			</tr>
+		                					                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-1-2-2" name="tabbed-tab-1-2"><label for="tabbed-tab-1-2-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">WOMEN TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+		                		<table border="0px">
+		                			<th>Size</th>
+		                			<th>Chest</th>
+		                			<th>Waist</th>
+		                			<th>Hips</th>
+		                					                			<tr>
+		                				<td class="td-even">XS</td>
+		                				<td class="td-odd"></td>
+		                				<td class="td-even">60-67</td>
+		                				<td class="td-odd">84-91</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">S</td>
+		                				<td class="td-odd"></td>
+		                				<td class="td-even">67-74</td>
+		                				<td class="td-odd">91-98</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">M</td>
+		                				<td class="td-odd"></td>
+		                				<td class="td-even">74-81</td>
+		                				<td class="td-odd">98-105</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">L</td>
+		                				<td class="td-odd"></td>
+		                				<td class="td-even">81-88</td>
+		                				<td class="td-odd">105-112</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">XL</td>
+		                				<td class="td-odd"></td>
+		                				<td class="td-even">88-98</td>
+		                				<td class="td-odd">112-120</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">XXL</td>
+		                				<td class="td-odd"></td>
+		                				<td class="td-even">98-108</td>
+		                				<td class="td-odd">120-128</td>
+		                			</tr>
+		                					                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-1-2-3" name="tabbed-tab-1-2"><label for="tabbed-tab-1-2-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-1-2-3-1" name="tabbed-tab-1-2-1" checked><label for="tabbed-tab-1-2-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">WOMEN BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-1-2-3-2" name="tabbed-tab-1-2-1"><label for="tabbed-tab-1-2-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">WOMEN PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->
+	                </div>
+	              </div>
+	        
+	          </div>
+
+	          <input type="radio" id="tabbed-tab-1-3" name="tabbed-tab-1"><label for="tabbed-tab-1-3">KIDS</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-1-3-1" name="tabbed-tab-1-3" checked><label for="tabbed-tab-1-3-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">KIDS SHOE</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+		                		<table border="0px">
+		                			<th>US Size</th>
+		                			<th>UK Size</th>
+		                			<th>EU Size</th>
+		                			<th>CM</th>
+		                					                			<tr>
+		                				<td class="td-even">0C</td>
+		                				<td class="td-odd">0</td>
+		                				<td class="td-even">15</td>
+		                				<td class="td-odd">6</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">1C</td>
+		                				<td class="td-odd">0.5</td>
+		                				<td class="td-even">16</td>
+		                				<td class="td-odd">7</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">1.5C</td>
+		                				<td class="td-odd">1</td>
+		                				<td class="td-even">16.5</td>
+		                				<td class="td-odd">7.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">2C</td>
+		                				<td class="td-odd">1.5</td>
+		                				<td class="td-even">17</td>
+		                				<td class="td-odd">8</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">2.5C</td>
+		                				<td class="td-odd">2</td>
+		                				<td class="td-even">18</td>
+		                				<td class="td-odd">8.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">3C</td>
+		                				<td class="td-odd">2.5</td>
+		                				<td class="td-even">18.5</td>
+		                				<td class="td-odd">9</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">3.5C</td>
+		                				<td class="td-odd">3</td>
+		                				<td class="td-even">19</td>
+		                				<td class="td-odd">9.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">4C</td>
+		                				<td class="td-odd">3.5</td>
+		                				<td class="td-even">19.5</td>
+		                				<td class="td-odd">10</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">4.5C</td>
+		                				<td class="td-odd">4</td>
+		                				<td class="td-even">20</td>
+		                				<td class="td-odd">10.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">5C</td>
+		                				<td class="td-odd">4.5</td>
+		                				<td class="td-even">21</td>
+		                				<td class="td-odd">11</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">5.5C</td>
+		                				<td class="td-odd">5</td>
+		                				<td class="td-even">21.5</td>
+		                				<td class="td-odd">11.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">6C</td>
+		                				<td class="td-odd">5.5</td>
+		                				<td class="td-even">22</td>
+		                				<td class="td-odd">12</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">6.5C</td>
+		                				<td class="td-odd">6</td>
+		                				<td class="td-even">22.5</td>
+		                				<td class="td-odd">12.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">7C</td>
+		                				<td class="td-odd">6.5</td>
+		                				<td class="td-even">23.5</td>
+		                				<td class="td-odd">13</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">7.5C</td>
+		                				<td class="td-odd">7</td>
+		                				<td class="td-even">24</td>
+		                				<td class="td-odd">13.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">8C</td>
+		                				<td class="td-odd">7.5</td>
+		                				<td class="td-even">25</td>
+		                				<td class="td-odd">14</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">8.5C</td>
+		                				<td class="td-odd">8</td>
+		                				<td class="td-even">25.5</td>
+		                				<td class="td-odd">14.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">9C</td>
+		                				<td class="td-odd">8.5</td>
+		                				<td class="td-even">26</td>
+		                				<td class="td-odd">15</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">9.5C</td>
+		                				<td class="td-odd">9</td>
+		                				<td class="td-even">26.5</td>
+		                				<td class="td-odd">15.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">10C</td>
+		                				<td class="td-odd">9.5</td>
+		                				<td class="td-even">27</td>
+		                				<td class="td-odd">16</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">10.5C</td>
+		                				<td class="td-odd">10</td>
+		                				<td class="td-even">27.5</td>
+		                				<td class="td-odd">16.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">11C</td>
+		                				<td class="td-odd">10.5</td>
+		                				<td class="td-even">28</td>
+		                				<td class="td-odd">17</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">11.5C</td>
+		                				<td class="td-odd">11</td>
+		                				<td class="td-even">28.5</td>
+		                				<td class="td-odd">17.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">12C</td>
+		                				<td class="td-odd">11.5</td>
+		                				<td class="td-even">29.5</td>
+		                				<td class="td-odd">18</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">12.5C</td>
+		                				<td class="td-odd">12</td>
+		                				<td class="td-even">30</td>
+		                				<td class="td-odd">18.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">13C</td>
+		                				<td class="td-odd">12.5</td>
+		                				<td class="td-even">31</td>
+		                				<td class="td-odd">19</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">13.5C</td>
+		                				<td class="td-odd">13</td>
+		                				<td class="td-even">31.5</td>
+		                				<td class="td-odd">19.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">1Y</td>
+		                				<td class="td-odd">13.5</td>
+		                				<td class="td-even">32</td>
+		                				<td class="td-odd">20</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">1.5Y</td>
+		                				<td class="td-odd">1</td>
+		                				<td class="td-even">33</td>
+		                				<td class="td-odd">20.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">2Y</td>
+		                				<td class="td-odd">1.5</td>
+		                				<td class="td-even">33.5</td>
+		                				<td class="td-odd">21</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">2.5Y</td>
+		                				<td class="td-odd">2</td>
+		                				<td class="td-even">34</td>
+		                				<td class="td-odd">21.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">3Y</td>
+		                				<td class="td-odd">2.5</td>
+		                				<td class="td-even">35</td>
+		                				<td class="td-odd">22</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">3.5Y</td>
+		                				<td class="td-odd">3</td>
+		                				<td class="td-even">35.5</td>
+		                				<td class="td-odd">22.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">4Y</td>
+		                				<td class="td-odd">3.5</td>
+		                				<td class="td-even">36</td>
+		                				<td class="td-odd">23</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">4.5Y</td>
+		                				<td class="td-odd">4</td>
+		                				<td class="td-even">36.5</td>
+		                				<td class="td-odd">23.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">5Y</td>
+		                				<td class="td-odd">4.5</td>
+		                				<td class="td-even">37.5</td>
+		                				<td class="td-odd">23.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">5.5Y</td>
+		                				<td class="td-odd">5</td>
+		                				<td class="td-even">38</td>
+		                				<td class="td-odd">24</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">6Y</td>
+		                				<td class="td-odd">5.5</td>
+		                				<td class="td-even">38.5</td>
+		                				<td class="td-odd">24</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">6.5Y</td>
+		                				<td class="td-odd">6</td>
+		                				<td class="td-even">39</td>
+		                				<td class="td-odd">24.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">7Y</td>
+		                				<td class="td-odd">6</td>
+		                				<td class="td-even">40</td>
+		                				<td class="td-odd">25</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">7.5Y</td>
+		                				<td class="td-odd">6.5</td>
+		                				<td class="td-even">40.5</td>
+		                				<td class="td-odd">25.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">8Y</td>
+		                				<td class="td-odd">7</td>
+		                				<td class="td-even">41</td>
+		                				<td class="td-odd">26</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">8.5Y</td>
+		                				<td class="td-odd">7.5</td>
+		                				<td class="td-even">42</td>
+		                				<td class="td-odd">26.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">9Y</td>
+		                				<td class="td-odd">8</td>
+		                				<td class="td-even">42.5</td>
+		                				<td class="td-odd">27</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">9.5Y</td>
+		                				<td class="td-odd">8.5</td>
+		                				<td class="td-even">43</td>
+		                				<td class="td-odd">27.5</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">10Y</td>
+		                				<td class="td-odd">9</td>
+		                				<td class="td-even">44</td>
+		                				<td class="td-odd">28</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">10.5Y</td>
+		                				<td class="td-odd">9.5</td>
+		                				<td class="td-even">44.5</td>
+		                				<td class="td-odd">28.5</td>
+		                			</tr>
+		                					                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-1-3-2" name="tabbed-tab-1-3"><label for="tabbed-tab-1-3-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">KIDS TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+		                		<table border="0px">
+		                			<th>Size</th>
+		                			<th>Chest</th>
+		                			<th>Waist</th>
+		                			<th>Hips</th>
+		                					                			<tr>
+		                				<td class="td-even">XXS</td>
+		                				<td class="td-odd">52-53</td>
+		                				<td class="td-even">54-54</td>
+		                				<td class="td-odd">54-56</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">XS</td>
+		                				<td class="td-odd">53-56</td>
+		                				<td class="td-even">54-56</td>
+		                				<td class="td-odd">56-59</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">S</td>
+		                				<td class="td-odd">56-59</td>
+		                				<td class="td-even">56-58</td>
+		                				<td class="td-odd">59-61</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">M</td>
+		                				<td class="td-odd">59-61</td>
+		                				<td class="td-even">58-59</td>
+		                				<td class="td-odd">61-63</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">L</td>
+		                				<td class="td-odd">61-63</td>
+		                				<td class="td-even">59-60</td>
+		                				<td class="td-odd">63-66</td>
+		                			</tr>
+		                					                			<tr>
+		                				<td class="td-even">XL</td>
+		                				<td class="td-odd">63-66</td>
+		                				<td class="td-even">60-61</td>
+		                				<td class="td-odd">66-70</td>
+		                			</tr>
+		                					                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-1-3-3" name="tabbed-tab-1-3"><label for="tabbed-tab-1-3-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-1-3-3-1" name="tabbed-tab-1-3-1" checked><label for="tabbed-tab-1-3-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">KID BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-1-3-3-2" name="tabbed-tab-1-3-1"><label for="tabbed-tab-1-3-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">KID PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->
+	                </div>
+	              </div>
+	        
+	          </div>
+	      </div>
+	  </div>
+</body>
+</html></div>
+
+<div id="ADIDAS" class="tabcontent">
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+/* Set tinggi body ke 100% */
+body, html, p{
+  height: 100%;
+  margin: 0;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+/* Style tab links nya */
+.tablink {
+  background-color: transparent;
+  color: #484848;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 33.3%;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+.tablink:hover {
+  border-bottom: solid 1px coral;
+}
+
+/* Style untuk tab konten (dan tambah height:100% untuk full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 70px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+/*subtab nya*/
+
+* {box-sizing: border-box}
+.tabbed {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.tabbed > input {
+  display: none;
+}
+.tabbed > input:checked + label {
+  color: coral;
+}
+.tabbed > input + label:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.tabbed > input:checked + label + div {
+  display: block;
+}
+.tabbed > label {
+  order: 1;
+  flex-grow: 1;
+  padding: 4px 10px;
+  text-align: center;
+}
+.tabbed > div {
+  order: 2;
+  flex-basis: 100%;
+  display: none;
+  padding: 0px;
+}
+
+.tab-col{
+  background-color: lightgrey;
+}
+.tab-col-sub{
+  background-color: whitesmoke;
+}
+.contain{
+  background: white;
+  color: #3e3e3e;
+  height: 600px;
+}
+
+/* untuk tampilan aja */
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #3e3e3e;
+}
+
+.tabbed {
+
+}
+
+hr {
+  background-color: white;
+  height: 5px;
+  border: 0;
+  margin: 10px 0 0;
+}
+hr + * {
+  margin-top: 10px;
+}
+hr + hr {
+  margin: 0 0;
+}
+.main-menu-container{
+  max-width: 16%;
+  margin: auto;
+}
+.top-heading{
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;  
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+.submenu_container{
+  width: 70%;
+  height: auto;
+  overflow: scroll;
+}
+.subtab{
+
+}
+.head-desc{
+  color: coral;
+  font-size: 26px;
+
+}
+.head-desc-1{
+  color: grey;
+  font-size: 18px;
+}
+.head-contain{
+  text-align: center;
+  padding-top: 20px;
+}
+table{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px; 
+  table-layout: fixed;
+}
+.td-even{
+  background-color: lightgrey;
+}
+.tab-con{
+  margin:10px;
+}
+.td-odd{
+  background-color: whitesmoke;
+}
+th{
+  background-color:#3e3e3e;
+  color: white; 
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 100;
+  width: 25%;
+}
+td{
+  text-align: center;
+}
+tr:hover td{
+  border: solid 1px coral;
+}
+tr td:hover{
+  background-color: coral;
+  color: white;
+}
+</style></head>
+<body>
+		<div class="container">
+	      <div class="tabbed">
+	          <input type="radio" id="tabbed-tab-2-1" name="tabbed-tab-2" checked><label for="tabbed-tab-2-1">MEN</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-2-1-1" name="tabbed-tab-2-1" checked><label for="tabbed-tab-2-1-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">MEN SHOES</div>
+			                	<div class="head-desc-1">FIND YOUR SIZE</div>
+			                	<div>Use your measurements and the chart below to determine your shoe size</div>
+			                	<div>
+			                		<table border="0px">
+			                			<th>US Size</th>
+			                			<th>UK Size</th>
+			                			<th>EU Size</th>
+			                			<th>CM</th>
+			                						                			<tr>
+			                				<td class="td-even">4</td>
+			                				<td class="td-odd">3.5</td>
+			                				<td class="td-even">36</td>
+			                				<td class="td-odd">22</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4.5</td>
+			                				<td class="td-odd">4</td>
+			                				<td class="td-even">36 2/3</td>
+			                				<td class="td-odd">22.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5</td>
+			                				<td class="td-odd">4.5</td>
+			                				<td class="td-even">37 1/3</td>
+			                				<td class="td-odd">23</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5.5</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">38</td>
+			                				<td class="td-odd">23.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">5.5</td>
+			                				<td class="td-even">38 2/3</td>
+			                				<td class="td-odd">24</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6.5</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">39 1/3</td>
+			                				<td class="td-odd">24.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">6.5</td>
+			                				<td class="td-even">40</td>
+			                				<td class="td-odd">25</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7.5</td>
+			                				<td class="td-odd">7</td>
+			                				<td class="td-even">40 2/3</td>
+			                				<td class="td-odd">25.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8</td>
+			                				<td class="td-odd">7.5</td>
+			                				<td class="td-even">41 1/3</td>
+			                				<td class="td-odd">26</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8.5</td>
+			                				<td class="td-odd">8</td>
+			                				<td class="td-even">42</td>
+			                				<td class="td-odd">26.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9</td>
+			                				<td class="td-odd">8.5</td>
+			                				<td class="td-even">42 2/3</td>
+			                				<td class="td-odd">27</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9.5</td>
+			                				<td class="td-odd">9</td>
+			                				<td class="td-even">43 1/3</td>
+			                				<td class="td-odd">27.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10</td>
+			                				<td class="td-odd">9.5</td>
+			                				<td class="td-even">44</td>
+			                				<td class="td-odd">28</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10.5</td>
+			                				<td class="td-odd">10</td>
+			                				<td class="td-even">44 2/3</td>
+			                				<td class="td-odd">28.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11</td>
+			                				<td class="td-odd">10.5</td>
+			                				<td class="td-even">45 1/3</td>
+			                				<td class="td-odd">29</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11.5</td>
+			                				<td class="td-odd">11</td>
+			                				<td class="td-even">46</td>
+			                				<td class="td-odd">29.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12</td>
+			                				<td class="td-odd">11.5</td>
+			                				<td class="td-even">46 2/3</td>
+			                				<td class="td-odd">30</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12.5</td>
+			                				<td class="td-odd">12</td>
+			                				<td class="td-even">47 1/3</td>
+			                				<td class="td-odd">30.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13</td>
+			                				<td class="td-odd">12.5</td>
+			                				<td class="td-even">48</td>
+			                				<td class="td-odd">31</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13.5</td>
+			                				<td class="td-odd">13</td>
+			                				<td class="td-even">48 2/3</td>
+			                				<td class="td-odd">31.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">14</td>
+			                				<td class="td-odd">13.5</td>
+			                				<td class="td-even">49 1/3</td>
+			                				<td class="td-odd">32</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">14.5</td>
+			                				<td class="td-odd">14</td>
+			                				<td class="td-even">50</td>
+			                				<td class="td-odd">32.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">15</td>
+			                				<td class="td-odd">14.5</td>
+			                				<td class="td-even">50 2/3</td>
+			                				<td class="td-odd">33</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">16</td>
+			                				<td class="td-odd">15</td>
+			                				<td class="td-even">51 1/3</td>
+			                				<td class="td-odd">34</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">17</td>
+			                				<td class="td-odd">16</td>
+			                				<td class="td-even">52 2/3</td>
+			                				<td class="td-odd">35</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">18</td>
+			                				<td class="td-odd">17</td>
+			                				<td class="td-even">53 1/3</td>
+			                				<td class="td-odd">36</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">19</td>
+			                				<td class="td-odd">18</td>
+			                				<td class="td-even">54 2/3</td>
+			                				<td class="td-odd">37</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">20</td>
+			                				<td class="td-odd">19</td>
+			                				<td class="td-even">55 2/3</td>
+			                				<td class="td-odd">38</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-2-1-2" name="tabbed-tab-2-1"><label for="tabbed-tab-2-1-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">MEN TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>Size</th>
+			                			<th>Chest</th>
+			                			<th>Waist</th>
+			                			<th>Hips</th>
+			                						                			<tr>
+			                				<td class="td-even">XS</td>
+			                				<td class="td-odd">82 - 87</td>
+			                				<td class="td-even">71 - 75</td>
+			                				<td class="td-odd">82 - 86</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">S</td>
+			                				<td class="td-odd">88 - 94</td>
+			                				<td class="td-even">76 - 82</td>
+			                				<td class="td-odd">87 - 93</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">M</td>
+			                				<td class="td-odd">95 - 102</td>
+			                				<td class="td-even">83 - 90</td>
+			                				<td class="td-odd">94 - 101</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">L</td>
+			                				<td class="td-odd">103 - 111</td>
+			                				<td class="td-even">91 - 99</td>
+			                				<td class="td-odd">102 - 110</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XL</td>
+			                				<td class="td-odd">112 - 121</td>
+			                				<td class="td-even">100 - 109</td>
+			                				<td class="td-odd">111 - 119</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XXL</td>
+			                				<td class="td-odd">122 - 132</td>
+			                				<td class="td-even">110 - 121</td>
+			                				<td class="td-odd">120 - 128</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3XL</td>
+			                				<td class="td-odd">133 - 144</td>
+			                				<td class="td-even">122 - 134</td>
+			                				<td class="td-odd">129 - 138</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-2-1-3" name="tabbed-tab-2-1" ><label for="tabbed-tab-2-1-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-2-1-3-1" name="tabbed-tab-2-1-1" checked><label for="tabbed-tab-2-1-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">MEN BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-2-1-3-2" name="tabbed-tab-2-1-2"><label for="tabbed-tab-2-1-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">MEN PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->
+	                </div>
+	              </div>
+	        
+	              
+	          </div>
+
+	          <input type="radio" id="tabbed-tab-2-2" name="tabbed-tab-2"><label for="tabbed-tab-2-2">WOMEN</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-2-2-1" name="tabbed-tab-2-2" checked><label for="tabbed-tab-2-2-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">WOMEN SHOES</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>US Size</th>
+			                			<th>UK Size</th>
+			                			<th>EU Size</th>
+			                			<th>CM</th>
+			                						                			<tr>
+			                				<td class="td-even">5</td>
+			                				<td class="td-odd">3.5</td>
+			                				<td class="td-even">36</td>
+			                				<td class="td-odd">22</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5.5</td>
+			                				<td class="td-odd">4</td>
+			                				<td class="td-even">36 2/3</td>
+			                				<td class="td-odd">22.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">4.5</td>
+			                				<td class="td-even">37 1/3</td>
+			                				<td class="td-odd">23</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6.5</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">38</td>
+			                				<td class="td-odd">23.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">5.5</td>
+			                				<td class="td-even">38 2/3</td>
+			                				<td class="td-odd">24</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7.5</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">39 1/3</td>
+			                				<td class="td-odd">24.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8</td>
+			                				<td class="td-odd">6.5</td>
+			                				<td class="td-even">40</td>
+			                				<td class="td-odd">25</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8.5</td>
+			                				<td class="td-odd">7</td>
+			                				<td class="td-even">40 2/3</td>
+			                				<td class="td-odd">25.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9</td>
+			                				<td class="td-odd">7.5</td>
+			                				<td class="td-even">41 1/3</td>
+			                				<td class="td-odd">26</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9.5</td>
+			                				<td class="td-odd">8</td>
+			                				<td class="td-even">42</td>
+			                				<td class="td-odd">26.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10</td>
+			                				<td class="td-odd">8.5</td>
+			                				<td class="td-even">42 2/3</td>
+			                				<td class="td-odd">27</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10.5</td>
+			                				<td class="td-odd">9</td>
+			                				<td class="td-even">43 1/3</td>
+			                				<td class="td-odd">27.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11</td>
+			                				<td class="td-odd">9.5</td>
+			                				<td class="td-even">44</td>
+			                				<td class="td-odd">28</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11.5</td>
+			                				<td class="td-odd">10</td>
+			                				<td class="td-even">44 2/3</td>
+			                				<td class="td-odd">28.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12</td>
+			                				<td class="td-odd">10.5</td>
+			                				<td class="td-even">45 1/3</td>
+			                				<td class="td-odd">29</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12.5</td>
+			                				<td class="td-odd">11</td>
+			                				<td class="td-even">46</td>
+			                				<td class="td-odd">29.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13</td>
+			                				<td class="td-odd">11.5</td>
+			                				<td class="td-even">46 2/3</td>
+			                				<td class="td-odd">30</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13.5</td>
+			                				<td class="td-odd">12</td>
+			                				<td class="td-even">47 1/3</td>
+			                				<td class="td-odd">30.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">14</td>
+			                				<td class="td-odd">12.5</td>
+			                				<td class="td-even">48</td>
+			                				<td class="td-odd">31</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">14.5</td>
+			                				<td class="td-odd">13</td>
+			                				<td class="td-even">48 2/3</td>
+			                				<td class="td-odd">31.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">15</td>
+			                				<td class="td-odd">13.5</td>
+			                				<td class="td-even">49 1/3</td>
+			                				<td class="td-odd">32</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">15.5</td>
+			                				<td class="td-odd">14</td>
+			                				<td class="td-even">50</td>
+			                				<td class="td-odd">32.5</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-2-2-2" name="tabbed-tab-2-2"><label for="tabbed-tab-2-2-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">WOMEN TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>Size</th>
+			                			<th>Chest</th>
+			                			<th>Waist</th>
+			                			<th>Hips</th>
+			                						                			<tr>
+			                				<td class="td-even">XXS</td>
+			                				<td class="td-odd">73 - 76</td>
+			                				<td class="td-even">57 - 60</td>
+			                				<td class="td-odd">82 - 85</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XS</td>
+			                				<td class="td-odd">77 - 82</td>
+			                				<td class="td-even">61 - 66</td>
+			                				<td class="td-odd">86 - 91</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">S</td>
+			                				<td class="td-odd">83 - 88</td>
+			                				<td class="td-even">67 - 72</td>
+			                				<td class="td-odd">92 - 97</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">M</td>
+			                				<td class="td-odd">89 - 94</td>
+			                				<td class="td-even">73 - 78</td>
+			                				<td class="td-odd">98 - 103</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">L</td>
+			                				<td class="td-odd">95 - 101</td>
+			                				<td class="td-even">79 - 85</td>
+			                				<td class="td-odd">104 - 110</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XL</td>
+			                				<td class="td-odd">102 - 109</td>
+			                				<td class="td-even">86 - 94</td>
+			                				<td class="td-odd">111 - 117</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XXL</td>
+			                				<td class="td-odd">110 - 118</td>
+			                				<td class="td-even">94 - 104</td>
+			                				<td class="td-odd">118 - 125</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">1X</td>
+			                				<td class="td-odd">104 - 113</td>
+			                				<td class="td-even">89 - 98</td>
+			                				<td class="td-odd">111 - 120</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">2X</td>
+			                				<td class="td-odd">114 - 123</td>
+			                				<td class="td-even">99 - 108</td>
+			                				<td class="td-odd">121 - 130</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3X</td>
+			                				<td class="td-odd">124 - 133</td>
+			                				<td class="td-even">109 - 118</td>
+			                				<td class="td-odd">131 - 140</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4X</td>
+			                				<td class="td-odd">134 - 143</td>
+			                				<td class="td-even">119 - 128</td>
+			                				<td class="td-odd">141 - 150</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-2-2-3" name="tabbed-tab-2-2"><label for="tabbed-tab-2-2-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-2-2-3-1" name="tabbed-tab-1-1-2" checked><label for="tabbed-tab-2-2-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">WOMEN BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-2-2-3-2" name="tabbed-tab-1-1"><label for="tabbed-tab-2-2-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">WOMEN PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->
+	                </div>
+	              </div>
+	        
+	              
+	          </div>
+
+	          <input type="radio" id="tabbed-tab-2-3" name="tabbed-tab-2"><label for="tabbed-tab-2-3">KIDS</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-2-3-1" name="tabbed-tab-2-3" checked><label for="tabbed-tab-2-3-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">KIDS SHOE</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>US Size</th>
+			                			<th>UK Size</th>
+			                			<th>EU Size</th>
+			                			<th>CM</th>
+			                						                			<tr>
+			                				<td class="td-even">1k</td>
+			                				<td class="td-odd">0k</td>
+			                				<td class="td-even">16</td>
+			                				<td class="td-odd">8.1</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">2k</td>
+			                				<td class="td-odd">1k</td>
+			                				<td class="td-even">17</td>
+			                				<td class="td-odd">9</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3k</td>
+			                				<td class="td-odd">2k</td>
+			                				<td class="td-even">18</td>
+			                				<td class="td-odd">9.8</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4k</td>
+			                				<td class="td-odd">3k</td>
+			                				<td class="td-even">19</td>
+			                				<td class="td-odd">10.6</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5k</td>
+			                				<td class="td-odd">4k</td>
+			                				<td class="td-even">20</td>
+			                				<td class="td-odd">11.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5.5k</td>
+			                				<td class="td-odd">5k</td>
+			                				<td class="td-even">21</td>
+			                				<td class="td-odd">12.3</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6k</td>
+			                				<td class="td-odd">5.5k</td>
+			                				<td class="td-even">22</td>
+			                				<td class="td-odd">12.8</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7k</td>
+			                				<td class="td-odd">6.5k</td>
+			                				<td class="td-even">23.5</td>
+			                				<td class="td-odd">13.6</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7.5</td>
+			                				<td class="td-odd">7k</td>
+			                				<td class="td-even">24</td>
+			                				<td class="td-odd">14</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8k</td>
+			                				<td class="td-odd">7.5k</td>
+			                				<td class="td-even">25</td>
+			                				<td class="td-odd">14.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8.5k</td>
+			                				<td class="td-odd">8k</td>
+			                				<td class="td-even">25.5</td>
+			                				<td class="td-odd">14.9</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9k</td>
+			                				<td class="td-odd">8.5k</td>
+			                				<td class="td-even">26</td>
+			                				<td class="td-odd">15.3</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9.5k</td>
+			                				<td class="td-odd">9k</td>
+			                				<td class="td-even">26.5</td>
+			                				<td class="td-odd">15.7</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10k</td>
+			                				<td class="td-odd">9.5k</td>
+			                				<td class="td-even">27</td>
+			                				<td class="td-odd">16.1</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10.5k</td>
+			                				<td class="td-odd">10k</td>
+			                				<td class="td-even">28</td>
+			                				<td class="td-odd">16.6</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11k</td>
+			                				<td class="td-odd">10.5k</td>
+			                				<td class="td-even">28.5</td>
+			                				<td class="td-odd">17</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11.5k</td>
+			                				<td class="td-odd">11k</td>
+			                				<td class="td-even">29</td>
+			                				<td class="td-odd">17.4</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12k</td>
+			                				<td class="td-odd">11.5k</td>
+			                				<td class="td-even">30</td>
+			                				<td class="td-odd">17.8</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12.5k</td>
+			                				<td class="td-odd">12k</td>
+			                				<td class="td-even">30.5</td>
+			                				<td class="td-odd">18.3</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13k</td>
+			                				<td class="td-odd">12.5k</td>
+			                				<td class="td-even">31</td>
+			                				<td class="td-odd">18.7</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13.5k</td>
+			                				<td class="td-odd">13k</td>
+			                				<td class="td-even">31.5</td>
+			                				<td class="td-odd">19.1</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">1</td>
+			                				<td class="td-odd">13.5k</td>
+			                				<td class="td-even">32</td>
+			                				<td class="td-odd">19.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">1.5</td>
+			                				<td class="td-odd">1</td>
+			                				<td class="td-even">33</td>
+			                				<td class="td-odd">20</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">2</td>
+			                				<td class="td-odd">1.5</td>
+			                				<td class="td-even">33.5</td>
+			                				<td class="td-odd">20.4</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">2.5</td>
+			                				<td class="td-odd">2</td>
+			                				<td class="td-even">34</td>
+			                				<td class="td-odd">20.8</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3</td>
+			                				<td class="td-odd">2.5</td>
+			                				<td class="td-even">35</td>
+			                				<td class="td-odd">21.2</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3.5</td>
+			                				<td class="td-odd">3</td>
+			                				<td class="td-even">35.5</td>
+			                				<td class="td-odd">21.6</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4</td>
+			                				<td class="td-odd">3.5</td>
+			                				<td class="td-even">36</td>
+			                				<td class="td-odd">22.1</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4.5</td>
+			                				<td class="td-odd">4</td>
+			                				<td class="td-even">36 2/3</td>
+			                				<td class="td-odd">22.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5</td>
+			                				<td class="td-odd">4.5</td>
+			                				<td class="td-even">37 1/3</td>
+			                				<td class="td-odd">22.9</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5.5</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">38</td>
+			                				<td class="td-odd">23.3</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">5.5</td>
+			                				<td class="td-even">38 2/3</td>
+			                				<td class="td-odd">23.8</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6.5</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">39 1/3</td>
+			                				<td class="td-odd">24.2</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">6.5</td>
+			                				<td class="td-even">40</td>
+			                				<td class="td-odd">24.6</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7.5</td>
+			                				<td class="td-odd">7</td>
+			                				<td class="td-even">40 2/3</td>
+			                				<td class="td-odd">25</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-2-3-2" name="tabbed-tab-2-3"><label for="tabbed-tab-2-3-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">KIDS TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>Size</th>
+			                			<th>Chest</th>
+			                			<th>Waist</th>
+			                			<th>Hips</th>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-2-3-3" name="tabbed-tab-2-3"><label for="tabbed-tab-2-3-3">BOTTOMS</label>
+	                <div class="contain">
+		                <!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-2-3-3-1" name="tabbed-tab-1-1-3" checked><label for="tabbed-tab-2-3-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">KID BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-2-3-3-2" name="tabbed-tab-1-1-3"><label for="tabbed-tab-2-3-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">KID PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+						<!-- END sub contain PANTS-->
+	                	</div>
+	                </div>
+	              </div>
+	        
+	          </div>
+	      </div>
+	  </div>
+</body>
+</html>	  
+</div>
+
+<div id="PUMA" class="tabcontent">
+	 <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+/* Set tinggi body ke 100% */
+body, html, p{
+  height: 100%;
+  margin: 0;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+/* Style tab links nya */
+.tablink {
+  background-color: transparent;
+  color: #484848;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 33.3%;
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+
+.tablink:hover {
+  border-bottom: solid 1px coral;
+}
+
+/* Style untuk tab konten (dan tambah height:100% untuk full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 70px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+/*subtab nya*/
+
+* {box-sizing: border-box}
+.tabbed {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.tabbed > input {
+  display: none;
+}
+.tabbed > input:checked + label {
+  color: coral;
+}
+.tabbed > input + label:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.tabbed > input:checked + label + div {
+  display: block;
+}
+.tabbed > label {
+  order: 1;
+  flex-grow: 1;
+  padding: 4px 10px;
+  text-align: center;
+}
+.tabbed > div {
+  order: 2;
+  flex-basis: 100%;
+  display: none;
+  padding: 0px;
+}
+
+.tab-col{
+  background-color: lightgrey;
+}
+.tab-col-sub{
+  background-color: whitesmoke;
+}
+.contain{
+  background: white;
+  color: #3e3e3e;
+  height: 600px;
+}
+
+/* untuk tampilan aja */
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #3e3e3e;
+}
+
+.tabbed {
+
+}
+
+hr {
+  background-color: white;
+  height: 5px;
+  border: 0;
+  margin: 10px 0 0;
+}
+hr + * {
+  margin-top: 10px;
+}
+hr + hr {
+  margin: 0 0;
+}
+.main-menu-container{
+  max-width: 16%;
+  margin: auto;
+}
+.top-heading{
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;  
+  font-family: 'Saira Semi Condensed',sans-serif;
+}
+.submenu_container{
+  width: 70%;
+  height: auto;
+  overflow: scroll;
+}
+.subtab{
+
+}
+.head-desc{
+  color: coral;
+  font-size: 26px;
+
+}
+.head-desc-1{
+  color: grey;
+  font-size: 18px;
+}
+.head-contain{
+  text-align: center;
+  padding-top: 20px;
+}
+table{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px; 
+  table-layout: fixed;
+}
+.td-even{
+  background-color: lightgrey;
+}
+.tab-con{
+  margin:10px;
+}
+.td-odd{
+  background-color: whitesmoke;
+}
+th{
+  background-color:#3e3e3e;
+  color: white; 
+  padding: 5px;
+  font-family: inherit;
+  font-weight: 100;
+  width: 25%;
+}
+td{
+  text-align: center;
+}
+tr:hover td{
+  border: solid 1px coral;
+}
+tr td:hover{
+  background-color: coral;
+  color: white;
+}
+</style></head>
+<body>
+	 <div class="container">
+	      <div class="tabbed">
+	          <input type="radio" id="tabbed-tab-3-1" name="tabbed-tab-3" checked><label for="tabbed-tab-3-1">MEN</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-3-1-1" name="tabbed-tab-3-1" checked><label for="tabbed-tab-3-1-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">MEN SHOES</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>US Size</th>
+			                			<th>UK Size</th>
+			                			<th>EU Size</th>
+			                			<th>CM</th>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">38</td>
+			                				<td class="td-odd">24</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6.5</td>
+			                				<td class="td-odd">5.5</td>
+			                				<td class="td-even">38.5</td>
+			                				<td class="td-odd">24.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">39</td>
+			                				<td class="td-odd">25</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7.5</td>
+			                				<td class="td-odd">6.5</td>
+			                				<td class="td-even">40</td>
+			                				<td class="td-odd">25.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8</td>
+			                				<td class="td-odd">7</td>
+			                				<td class="td-even">40.5</td>
+			                				<td class="td-odd">26</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8.5</td>
+			                				<td class="td-odd">7.5</td>
+			                				<td class="td-even">41</td>
+			                				<td class="td-odd">26.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9</td>
+			                				<td class="td-odd">8</td>
+			                				<td class="td-even">42</td>
+			                				<td class="td-odd">27</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9.5</td>
+			                				<td class="td-odd">8.5</td>
+			                				<td class="td-even">42.5</td>
+			                				<td class="td-odd">27.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10</td>
+			                				<td class="td-odd">9</td>
+			                				<td class="td-even">43</td>
+			                				<td class="td-odd">28</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10.5</td>
+			                				<td class="td-odd">9.5</td>
+			                				<td class="td-even">44</td>
+			                				<td class="td-odd">28.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11</td>
+			                				<td class="td-odd">10</td>
+			                				<td class="td-even">44.5</td>
+			                				<td class="td-odd">29</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11.5</td>
+			                				<td class="td-odd">10.5</td>
+			                				<td class="td-even">45</td>
+			                				<td class="td-odd">29.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12</td>
+			                				<td class="td-odd">11</td>
+			                				<td class="td-even">46</td>
+			                				<td class="td-odd">30</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12.5</td>
+			                				<td class="td-odd">11.5</td>
+			                				<td class="td-even">46.5</td>
+			                				<td class="td-odd">30.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13</td>
+			                				<td class="td-odd">12</td>
+			                				<td class="td-even">47</td>
+			                				<td class="td-odd">31</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">14</td>
+			                				<td class="td-odd">13</td>
+			                				<td class="td-even">48.5</td>
+			                				<td class="td-odd">31.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">15</td>
+			                				<td class="td-odd">14</td>
+			                				<td class="td-even">49.5</td>
+			                				<td class="td-odd">32</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">16</td>
+			                				<td class="td-odd">15</td>
+			                				<td class="td-even">51</td>
+			                				<td class="td-odd">32.5</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-3-1-2" name="tabbed-tab-3-1"><label for="tabbed-tab-3-1-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">MEN TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                		<div>
+			                		<table border="0px">
+			                			<th>Size</th>
+			                			<th>Chest</th>
+			                			<th>Waist</th>
+			                			<th>hips</th>
+			                						                			<tr>
+			                				<td class="td-even">xxs</td>
+			                				<td class="td-odd">76</td>
+			                				<td class="td-even">68.5</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">xs</td>
+			                				<td class="td-odd">84</td>
+			                				<td class="td-even">76</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">s</td>
+			                				<td class="td-odd">91.5</td>
+			                				<td class="td-even">81.5</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">M</td>
+			                				<td class="td-odd">99</td>
+			                				<td class="td-even">86.5</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">L</td>
+			                				<td class="td-odd">106.5</td>
+			                				<td class="td-even">94</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XL</td>
+			                				<td class="td-odd">114.5</td>
+			                				<td class="td-even">104</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XXL</td>
+			                				<td class="td-odd">122</td>
+			                				<td class="td-even">114.5</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3XL</td>
+			                				<td class="td-odd">132</td>
+			                				<td class="td-even">124.5</td>
+			                				<td class="td-odd"></td>
+			                			</tr>
+			                						                		</table>
+		                		</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-3-1-3" name="tabbed-tab-3-1" checked><label for="tabbed-tab-3-1-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-3-1-3-1" name="tabbed-tab-1-1-" checked><label for="tabbed-tab-3-1-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">MEN BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-3-1-3-2" name="tabbed-tab-1-1-"><label for="tabbed-tab-3-1-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">MEN PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->	
+	             	</div>
+	        	</div>
+	              
+	          </div>
+
+	          <input type="radio" id="tabbed-tab-3-2" name="tabbed-tab-3"><label for="tabbed-tab-3-2">WOMEN</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-3-2-1" name="tabbed-tab-3-2" checked><label for="tabbed-tab-3-2-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">WOMEN SHOES</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>US Size</th>
+			                			<th>UK Size</th>
+			                			<th>EU Size</th>
+			                			<th>CM</th>
+			                						                			<tr>
+			                				<td class="td-even">5.5</td>
+			                				<td class="td-odd">3</td>
+			                				<td class="td-even">35.5</td>
+			                				<td class="td-odd">22</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">3.5</td>
+			                				<td class="td-even">36</td>
+			                				<td class="td-odd">22.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6.5</td>
+			                				<td class="td-odd">4</td>
+			                				<td class="td-even">37</td>
+			                				<td class="td-odd">23</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">4.5</td>
+			                				<td class="td-even">37.5</td>
+			                				<td class="td-odd">23.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7.5</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">38</td>
+			                				<td class="td-odd">24</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8</td>
+			                				<td class="td-odd">5.5</td>
+			                				<td class="td-even">38.5</td>
+			                				<td class="td-odd">24.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8.5</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">39</td>
+			                				<td class="td-odd">25</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9</td>
+			                				<td class="td-odd">6.5</td>
+			                				<td class="td-even">40</td>
+			                				<td class="td-odd">25.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9.5</td>
+			                				<td class="td-odd">7</td>
+			                				<td class="td-even">40.5</td>
+			                				<td class="td-odd">26</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10</td>
+			                				<td class="td-odd">7.5</td>
+			                				<td class="td-even">41</td>
+			                				<td class="td-odd">26.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10.5</td>
+			                				<td class="td-odd">8</td>
+			                				<td class="td-even">42</td>
+			                				<td class="td-odd">27</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11</td>
+			                				<td class="td-odd">8.5</td>
+			                				<td class="td-even">42.5</td>
+			                				<td class="td-odd">27.5</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-3-2-2" name="tabbed-tab-3-2"><label for="tabbed-tab-3-2-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">WOMEN TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>Size</th>
+			                			<th>Chest</th>
+			                			<th>Waist</th>
+			                			<th>Hips</th>
+			                						                			<tr>
+			                				<td class="td-even">XXS</td>
+			                				<td class="td-odd">76</td>
+			                				<td class="td-even">61</td>
+			                				<td class="td-odd">89</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XS</td>
+			                				<td class="td-odd">81.5</td>
+			                				<td class="td-even">63.5</td>
+			                				<td class="td-odd">91.5</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">S</td>
+			                				<td class="td-odd">86.5</td>
+			                				<td class="td-even">66</td>
+			                				<td class="td-odd">94</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">M</td>
+			                				<td class="td-odd">91.5</td>
+			                				<td class="td-even">73.5</td>
+			                				<td class="td-odd">99</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">L</td>
+			                				<td class="td-odd">96.5</td>
+			                				<td class="td-even">78.5</td>
+			                				<td class="td-odd">104</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XL</td>
+			                				<td class="td-odd">101.5</td>
+			                				<td class="td-even">86.5</td>
+			                				<td class="td-odd">112</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">XXL</td>
+			                				<td class="td-odd">106.5</td>
+			                				<td class="td-even">91.5</td>
+			                				<td class="td-odd">117</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3XL</td>
+			                				<td class="td-odd">112</td>
+			                				<td class="td-even">96.5</td>
+			                				<td class="td-odd">122</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-3-2-3" name="tabbed-tab-3-2" checked><label for="tabbed-tab-3-2-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-3-2-3-1" name="tabbed-tab-1-1-" checked><label for="tabbed-tab-3-2-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">WOMEN BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-3-2-3-2" name="tabbed-tab-1-1-"><label for="tabbed-tab-3-2-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">WOMEN PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->	
+	                </div>
+	              </div>
+	        
+	          </div>
+
+	          <input type="radio" id="tabbed-tab-3-3" name="tabbed-tab-3"><label for="tabbed-tab-3-3">KIDS</label>
+	          <div>
+	              <div class="tabbed tab-col">
+	                <input type="radio" id="tabbed-tab-3-3-1" name="tabbed-tab-3-3" checked><label for="tabbed-tab-3-3-1">SHOES</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">KIDS SHOES</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>US Size</th>
+			                			<th>UK Size</th>
+			                			<th>EU Size</th>
+			                			<th>CM</th>
+			                						                			<tr>
+			                				<td class="td-even">3</td>
+			                				<td class="td-odd">2</td>
+			                				<td class="td-even">18</td>
+			                				<td class="td-odd">4.5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4</td>
+			                				<td class="td-odd">3</td>
+			                				<td class="td-even">19</td>
+			                				<td class="td-odd">4.75in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5</td>
+			                				<td class="td-odd">4</td>
+			                				<td class="td-even">20</td>
+			                				<td class="td-odd">5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5.5</td>
+			                				<td class="td-odd">4.5</td>
+			                				<td class="td-even">21</td>
+			                				<td class="td-odd">5.125 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">22</td>
+			                				<td class="td-odd">5.5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">23</td>
+			                				<td class="td-odd">5.75 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">8</td>
+			                				<td class="td-odd">7</td>
+			                				<td class="td-even">24</td>
+			                				<td class="td-odd">6.125 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">9</td>
+			                				<td class="td-odd">8</td>
+			                				<td class="td-even">25</td>
+			                				<td class="td-odd">6.25 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10</td>
+			                				<td class="td-odd">8.5</td>
+			                				<td class="td-even">26</td>
+			                				<td class="td-odd">6.5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">10.5</td>
+			                				<td class="td-odd">9.5</td>
+			                				<td class="td-even">27</td>
+			                				<td class="td-odd">6.625 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">11</td>
+			                				<td class="td-odd">10</td>
+			                				<td class="td-even">28</td>
+			                				<td class="td-odd">6.75 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">12</td>
+			                				<td class="td-odd">11</td>
+			                				<td class="td-even">30</td>
+			                				<td class="td-odd">7.125 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">13</td>
+			                				<td class="td-odd">12</td>
+			                				<td class="td-even">31</td>
+			                				<td class="td-odd">7.5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">1</td>
+			                				<td class="td-odd">13</td>
+			                				<td class="td-even">32</td>
+			                				<td class="td-odd">7.75 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">1.5</td>
+			                				<td class="td-odd">13.5</td>
+			                				<td class="td-even">33</td>
+			                				<td class="td-odd">8 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">2</td>
+			                				<td class="td-odd">1</td>
+			                				<td class="td-even">33</td>
+			                				<td class="td-odd">8.125 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">2.5</td>
+			                				<td class="td-odd">1.5</td>
+			                				<td class="td-even">34</td>
+			                				<td class="td-odd">8.25 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3</td>
+			                				<td class="td-odd">2</td>
+			                				<td class="td-even">34.5</td>
+			                				<td class="td-odd">8.5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">3.5</td>
+			                				<td class="td-odd">2.5</td>
+			                				<td class="td-even">35</td>
+			                				<td class="td-odd">8.625 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4</td>
+			                				<td class="td-odd">3</td>
+			                				<td class="td-even">35.5</td>
+			                				<td class="td-odd">8.75 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">4.5</td>
+			                				<td class="td-odd">3.5</td>
+			                				<td class="td-even">36</td>
+			                				<td class="td-odd">9 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5</td>
+			                				<td class="td-odd">4</td>
+			                				<td class="td-even">37</td>
+			                				<td class="td-odd">9.125 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">5.5</td>
+			                				<td class="td-odd">4.5</td>
+			                				<td class="td-even">37.5</td>
+			                				<td class="td-odd">9.25 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6</td>
+			                				<td class="td-odd">5</td>
+			                				<td class="td-even">38</td>
+			                				<td class="td-odd">9.5 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">6.5</td>
+			                				<td class="td-odd">5.5</td>
+			                				<td class="td-even">38.5</td>
+			                				<td class="td-odd">9.625 in</td>
+			                			</tr>
+			                						                			<tr>
+			                				<td class="td-even">7</td>
+			                				<td class="td-odd">6</td>
+			                				<td class="td-even">39</td>
+			                				<td class="td-odd">9.75 in</td>
+			                			</tr>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-3-3-2" name="tabbed-tab-3-3"><label for="tabbed-tab-3-3-2">TOP</label>
+	                <div class="contain">
+	                	<div class="head-contain">
+		                	<div class="head-desc">KIDS TOP</div>
+		                	<div class="head-desc-1">FIND YOUR SIZE</div>
+		                	<div>Use your measurements and the chart below to determine your shoe size</div>
+		                	<div>
+			                		<table border="0px">
+			                			<th>Size</th>
+			                			<th>Chest</th>
+			                			<th>Waist</th>
+			                			<th>Hips</th>
+			                						                		</table>
+		                	</div>
+	                	</div>
+	                </div>
+	                <input type="radio" id="tabbed-tab-3-3-3" name="tabbed-tab-3-3" checked><label for="tabbed-tab-3-3-3">BOTTOMS</label>
+	                <div class="contain">
+	                	<!-- sub contain BOTTOMS-->
+	                	<div class="tabbed tab-col-sub">
+		                	<input type="radio" id="tabbed-tab-3-3-3-1" name="tabbed-tab-1-1-" checked><label for="tabbed-tab-3-3-3-1">Bottoms</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">KID BOTTOMS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Reg Inside RL</th>
+				                			<th>Short Inside RL</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            
+			            <!-- END sub contain BOTTOMS-->
+
+			            <!-- sub contain PANTS -->
+			   
+		                	<input type="radio" id="tabbed-tab-3-3-3-2" name="tabbed-tab-1-1-"><label for="tabbed-tab-3-3-3-2">Pants</label>
+		                	<div class="contain">
+			                	<div class="head-contain">
+				                	<div class="head-desc">KID PANTS</div>
+				                	<div class="head-desc-1">FIND YOUR SIZE</div>
+				                	<div>Use your measurements and the chart below to determine your shoe size</div>
+				                	<div>
+				                		<table border="0px">
+				                			<th>Size</th>
+				                			<th>Waist</th>
+				                			<th>Hips</th>
+				                			<th>Tall In Leg</th>
+				                			<th>Short In Leg</th>
+				                			<th>Reg In Leg</th>
+				                							                		</table>
+				                	</div>
+			                	</div>
+			                </div>
+			            </div>
+						<!-- END sub contain PANTS-->	
+	                </div>
+	              </div>
+	        
+	              
+	          </div>
+	      </div>
+	  </div>
+	</div>
+</body>
+</html></div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.color = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+function openConten(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
